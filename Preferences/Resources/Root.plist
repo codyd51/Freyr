@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>icon</key>
+			<string>header.png</string>
+			<key>headerCellClass</key>
+			<string>FreyrHeaderCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.phillipt.freyr</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>footerText</key>
+			<string>Respring for this change to take effect</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>default</key>
+			<true/>
+			<key>id</key>
+			<string>EnabledCell</string>
+			<key>PostNotification</key>
+			<string>com.phillipt.freyr/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.phillipt.freyr</string>
+			<key>key</key>
+			<string>isCelsius</string>
+			<key>label</key>
+			<string>Degrees</string>
+			<key>default</key>
+			<string>fahrenheit</string>
+			<key>validTitles</key>
+			<array>
+				<string>Fahrenheit</string>
+				<string>Celsius</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>fahrenheit</string>
+				<string>celsius</string>
+			</array>
+			<key>id</key>
+			<string>DegreesCell</string>
+			<key>PostNotification</key>
+			<string>com.phillipt.freyr/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>defaults</key>
+			<string>com.phillipt.freyr</string>
+			<key>key</key>
+			<string>blurStyle</string>
+			<key>label</key>
+			<string>Blur Style</string>
+			<key>default</key>
+			<string>2060</string>
+			<key>validTitles</key>
+			<array>
+				<string>Dark</string>
+				<string>Common Blur</string>
+				<string>CC Style</string>
+				<string>Light</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+				<string>2060</string>
+				<string>2010</string>
+			</array>
+			<key>id</key>
+			<string>BlurStyleCell</string>
+			<key>PostNotification</key>
+			<string>com.phillipt.freyr/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Forecast Interval</string>
+			<key>footerText</key>
+			<string>Show either the daily or hourly forcast</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.phillipt.freyr</string>
+			<key>key</key>
+			<string>forecastTime</string>
+			<key>label</key>
+			<string>Forecast Interval</string>
+			<key>default</key>
+			<string>daily</string>
+			<key>validTitles</key>
+			<array>
+				<string>Hourly</string>
+				<string>Daily</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>hourly</string>
+				<string>daily</string>
+			</array>
+			<key>id</key>
+			<string>ForecastTimeCell</string>
+			<key>PostNotification</key>
+			<string>com.phillipt.freyr/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Number of forecasts</string>
+			<key>footerText</key>
+			<string>We'll show 4 forecasts</string>
+			<key>id</key>
+			<string>SliderLabelCell</string>
+		</dict>
+		<dict>
+			
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			
+    		<key>cellClass</key>
+    		<string>FreyrDiscreteSliderTableCell</string>
+    		<key>default</key>
+    		<real>4</real>
+    		<key>defaults</key>
+    		<string>com.phillipt.freyr</string>
+    		<key>key</key>
+    		<string>forecastCount</string>
+    		<key>label</key>
+    		<string>Number of Forecasts</string>
+    		<key>max</key>
+    		<real>6</real>
+    		<key>min</key>
+    		<real>1</real>
+    		<key>PostNotification</key>
+			<string>com.phillipt.freyr/ReloadPrefs</string>
+			<key>id</key>
+			<string>ForecastCountCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>The Creators</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openTwitter:</string>
+			<key>handle</key>
+			<string>@phillipten</string>
+			<key>label</key>
+			<string>Phillip Tennen</string>
+			<key>cellClass</key>
+			<string>FreyrSocialCell</string>
+			<key>icon</key>
+			<string>phil.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openTwitter:</string>
+			<key>handle</key>
+			<string>@milo_darling</string>
+			<key>label</key>
+			<string>Milo Darling</string>
+			<key>cellClass</key>
+			<string>FreyrSocialCell</string>
+			<key>icon</key>
+			<string>milo.png</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Freyr</string>
+</dict>
+</plist>
