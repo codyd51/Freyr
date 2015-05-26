@@ -1,9 +1,9 @@
 Freyr
 =================
 
-![Freyr](files/preview1.png)
-![Freyr](files/preview2.png)
-![Settings Page](files/preview3.jpg)
+![Freyr](/files/preview1.PNG)
+![Freyr](/files/preview2.PNG)
+![Settings Page](/files/preview3.JPG)
 
 Freyr allows you to quickly check your Weather forecast from the homescreen, offering a variety of customization and personalization options, as well as allowing you to tailer exactly what info you would like to be displayed.
 
