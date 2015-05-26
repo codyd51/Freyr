@@ -3,7 +3,7 @@ Name: Freyr
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: At-a-glance forecasts with the swipe of a finger
 Maintainer: Phillip Tennen
 Author: Phillip Tennen
 Section: Tweaks

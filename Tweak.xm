@@ -42,6 +42,7 @@
 
     //remove it before they see it if it was already there
     [[FreyrController sharedInstance] removeForecastViewFromPerformingIcon];
+    [[FreyrController sharedInstance] dismissFreyr];
 
     //custom completion block
     void (^cust)(void) = ^void(void){
@@ -57,6 +58,7 @@
 
     //remove it before they see it if it was already there
     [[FreyrController sharedInstance] removeForecastViewFromPerformingIcon];
+    [[FreyrController sharedInstance] dismissFreyr];
 
     //custom completion block
     void (^cust)(void) = ^void(void){
@@ -75,6 +77,7 @@
     %orig;
 
     SBIconView* weatherIcon = [[FreyrController sharedInstance] retreivePerformingIcon];
+    [[FreyrController sharedInstance] dismissFreyr];
     if (!weatherIcon) {
         NSLog(@"Icon could not be retreived.");
         return;
